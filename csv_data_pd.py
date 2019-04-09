@@ -30,7 +30,7 @@ for itr_b in range(len(peaks)-1):
     if peaks[itr_b] > peaks[itr_b+1]:
         spikes.append(1)
     else:
-        spikes.append(-1)
+        spikes.append(0)
 
 
 values = {'Time': time_line[:-1], 'Vector': miliV[:-1], 'Threshold': thres[:-1], 'Peaks': peaks[:-1], 'Spikes': spikes}
